@@ -71,7 +71,7 @@ int main(int argv, char* argc[])
 	}
 
 	//DEFAULT Remove from: DIRECTORY: (MAKE SURE ITS THE CORRECT NAME< THIS VALUE IS NOT CHECKED BEFORE ITS USED< PROGRAM MAY NOT RUN IF NOT A VALID DRIVE
-	const std::string ptdf = "E:\\Win_Backup_5-5-25\\test\\"; //argc[1];
+	const std::string ptdf = argc[1];
 	std::cout << ptdf << '\n';
 	const element_t path_to_delete_from = ptdf;
 	std::cout   <<  path_to_delete_from << '\n';
@@ -98,10 +98,10 @@ int main(int argv, char* argc[])
 	
 	if (sw.ShowWindow__on_off == false) {
 		llist->orgainze_nodes(p_files, p_path).print_all_linked_list_node_data();
-		llist->delete_files_of_type_in_nodes();
+		//llist->delete_files_of_type_in_nodes();
 	}
 	else if (sw.ShowWindow__on_off) {
-		llist->orgainze_nodes(p_files, p_path).delete_files_of_type_in_nodes();
+		//llist->orgainze_nodes(p_files, p_path).delete_files_of_type_in_nodes();
 	}
 	delete llist;
 	// ^ goes through the linked_list, and deletes those files from the system if they are there in the linked list nodes.
@@ -109,3 +109,4 @@ int main(int argv, char* argc[])
 }
 //removed all printing on the console in case its logged - the only way someone will know its running is if they use task manager
 //you may want to consider changing the name of the executable thats produced and changing the logo of the exe. in case as well.
+
