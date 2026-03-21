@@ -32,7 +32,7 @@ struct copy_conditions {
 		keep_no_copies = 2
 	};
 };
-
+//place all data into auxiliary struct. that way its all in one place for easier and quicker retrieval of data (it ill all be in one place) from the vector of data types. it wont need to jump memory gaps to find the next node, it just needs to do it once to get the name of the node (meaning the files of those filetypes that will be placed within that node)
 struct LINKED_LIST_DATA
 {
 	size_t total_vector_files = 0;		//how many files are within all the vectors within the nodes within the linked list
