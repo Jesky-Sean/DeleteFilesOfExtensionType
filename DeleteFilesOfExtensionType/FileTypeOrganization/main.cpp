@@ -57,6 +57,8 @@ using std::setfill; using std::setw;
 /// @param char *argc 
 /// @return 
 /// 
+
+//TODO: DEFINE only for windows and for Linux use a variant of this functionality. 
 struct shadowed_windows {
 
 	bool ShowWindow__on_off = false;
@@ -69,7 +71,7 @@ int main(int argv, char* argc[])
 	if(ShowWindow(GetConsoleWindow(), 0)){
 		sw.ShowWindow__on_off = true;
 	}
-
+//TODO. END PREVIOUS TODO. 
 	//DEFAULT Remove from: DIRECTORY: (MAKE SURE ITS THE CORRECT NAME< THIS VALUE IS NOT CHECKED BEFORE ITS USED< PROGRAM MAY NOT RUN IF NOT A VALID DRIVE
 	const std::string ptdf = argc[1];
 	std::cout << ptdf << '\n';
