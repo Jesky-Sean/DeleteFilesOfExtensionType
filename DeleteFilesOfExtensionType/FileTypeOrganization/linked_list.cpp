@@ -135,7 +135,7 @@ linked_list& linked_list::delete_files_of_type_in_nodes()
 
 //for_testing_only, if this is active, and if the program reads corn from a file, it will terminate the program.
 int kill_switch(element_t kill_condition) {
-	if (kill_condition == ".CORN" || kill_condition == ".corn")
+	if (kill_condition == "0000.CORN" || kill_condition == "0000.corn")
 		throw std::logic_error("reached testing kill point");
 	else {
 		//std::cout << "No corn discovered in these parts... yet!";
